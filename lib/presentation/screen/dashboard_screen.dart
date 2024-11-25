@@ -100,29 +100,39 @@ class DashboardScreen extends StatelessWidget {
           child: Row(
             spacing: 12,
             children: [
-              Column(
-                children: [
-                  Image.asset('assets/images/ic_menu_doa.png'),
-                  const Text(
-                    'Doa-doa',
-                    style: TextStyle(
-                      fontFamily: 'PoppinsRegular',
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, 'doa');
+                },
+                child: Column(
+                  children: [
+                    Image.asset('assets/images/ic_menu_doa.png'),
+                    const Text(
+                      'Doa-doa',
+                      style: TextStyle(
+                        fontFamily: 'PoppinsRegular',
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset('assets/images/ic_menu_zakat.png'),
-                  const Text(
-                    'Zakat',
-                    style: TextStyle(
-                      fontFamily: 'PoppinsRegular',
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, 'zakat');
+                },
+                child: Column(
+                  children: [
+                    Image.asset('assets/images/ic_menu_zakat.png'),
+                    const Text(
+                      'Zakat',
+                      style: TextStyle(
+                        fontFamily: 'PoppinsRegular',
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
               Column(
                 children: [
