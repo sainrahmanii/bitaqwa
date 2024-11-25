@@ -47,7 +47,7 @@ class DoaScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) => const DoaListScreen(
-                            category: 'Rumah',
+                            category: 'Pagi & Malam',
                           ),
                         ),
                       );
@@ -117,7 +117,7 @@ class DoaScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) => const DoaListScreen(
-                            category: 'Shalat',
+                            category: 'Sholat',
                           ),
                         ),
                       );
