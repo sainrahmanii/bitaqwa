@@ -134,17 +134,22 @@ class DashboardScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Image.asset('assets/images/ic_menu_jadwal_sholat.png'),
-                  const Text(
-                    'Jadwal Shalat',
-                    style: TextStyle(
-                      fontFamily: 'PoppinsRegular',
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, 'jadwal-shalat');
+                },
+                child: Column(
+                  children: [
+                    Image.asset('assets/images/ic_menu_jadwal_sholat.png'),
+                    const Text(
+                      'Jadwal Shalat',
+                      style: TextStyle(
+                        fontFamily: 'PoppinsRegular',
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
               Column(
                 children: [
