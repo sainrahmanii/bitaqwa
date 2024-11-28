@@ -6,12 +6,13 @@ class DetailDoaScreen extends StatelessWidget {
   final String arabicText;
   final String translation;
   final String references;
-  const DetailDoaScreen(
-      {required this.title,
-      required this.arabicText,
-      required this.translation,
-      required this.references,
-      super.key});
+  const DetailDoaScreen({
+    required this.title,
+    required this.arabicText,
+    required this.translation,
+    required this.references,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

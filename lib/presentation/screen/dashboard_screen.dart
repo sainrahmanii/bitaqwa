@@ -151,17 +151,22 @@ class DashboardScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Image.asset('assets/images/ic_menu_video_kajian.png'),
-                  const Text(
-                    'Video Kajian',
-                    style: TextStyle(
-                      fontFamily: 'PoppinsRegular',
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, 'vidio-kajian');
+                },
+                child: Column(
+                  children: [
+                    Image.asset('assets/images/ic_menu_video_kajian.png'),
+                    const Text(
+                      'Video Kajian',
+                      style: TextStyle(
+                        fontFamily: 'PoppinsRegular',
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
